@@ -3,7 +3,7 @@
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             {{ __('자동차 갤러리') }}
         </h2>
-        <button onclick=location.href="{{ route('posts.create') }}" type="button" class="btn btn-info">
+        <button onclick=location.href="{{ route('posts.create') }}" type="button" class="btn btn-primary">
             글쓰기</button>
     </x-slot>
     <x-post-list :posts="$posts" />

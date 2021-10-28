@@ -18,7 +18,7 @@
                             <li class="list-group-item">수정일: {{ $post->updated_at->diffForHumans() }}</li>
                         </ul>
                         <div class="card-body">
-
+                            @if($post->writer->name == Auth::user())
                             <a href="{{ route('posts.edit', ['post'=>$post->id]) }}" class="card-link">수정하기</a>
                             <form method="post" action="{{ route('posts.destroy', ['post'=>$post->id]) }}">
                               @csrf
@@ -28,7 +28,7 @@
                               삭제하기
                           </button>
                             </form>
-
+                            @endif
                         </div>
                       </div>
 
