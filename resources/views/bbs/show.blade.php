@@ -5,7 +5,7 @@
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             {{ __('상세보기') }}
         </h2>
-        <button onclick=location.href="{{ route('posts.index') }}" type="button" class="btn btn-info">
+        <button onclick=location.href="{{ route('posts.index') }}" type="button" class="btn btn-primary">
         목록보기</button>
 
     </div>
