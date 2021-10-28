@@ -6,7 +6,6 @@ use Illuminate\View\Component;
 
 class PostList extends Component
 {
-    public $name = "34ruby";
 
     public $posts;
     /**
